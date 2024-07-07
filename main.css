@@ -10,7 +10,7 @@
 
 
 :root {
-    --width-sidebar: 20%;
+    --width-sidebar: 18%;
 }
 
 body {
@@ -37,6 +37,10 @@ nav {
     font-weight: 100;
 }
 
+.options-header {
+    position: relative;
+}
+
 li .link-option {
     font-family: "Rubik", sans-serif;
     text-decoration: none;
@@ -44,6 +48,17 @@ li .link-option {
     font-size: 15px;
     color: #fff;
     justify-self: center;
+}
+
+
+svg {
+    position: relative;
+    top: 10px;
+    right: 5px;
+}
+
+#svg-sidebar {
+    position: static;
 }
 
 
