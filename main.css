@@ -1,0 +1,41 @@
+@font-face {
+    font-family: 'LilitaOne';
+    src: url(Fonts/LilitaOne-Regular.ttf);
+}
+
+:root {
+    --width-sidebar: 20%;
+}
+
+body {
+    font-family: LilitaOne, system-ui;
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    display: grid;
+    height: 100vh;
+    width: var(--width-sidebar);
+    gap: 20px;
+    background-color: #252977;
+    color: #fff;
+    grid-template-rows: 1fr 1fr 1fr 2fr;
+    position: relative;
+}
+
+.sidebar-title {
+    /* position: relative; */
+    align-self: center;
+    font-weight: 100;
+}
+
+li .link-option {
+    text-decoration: none;
+    color: #fff;
+}
+
+
+li {
+    list-style-type: none;
+}
