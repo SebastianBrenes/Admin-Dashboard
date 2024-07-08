@@ -8,8 +8,8 @@
         <link rel="stylesheet" href="main.css">
     </head> 
     <body>
-        <!-- svg img -->
-         <nav>
+        <!-- Sidebar Panel -->
+         <nav> 
             <div class="inline-sidebar title">
                 <svg id="svg-sidebar" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#fff"><path d="M21,16V4H3V16H21M21,2A2,2 0 0,1 23,4V16A2,2 0 0,1 21,18H14V20H16V22H8V20H10V18H3C1.89,18 1,17.1 1,16V4C1,2.89 1.89,2 3,2H21M5,6H14V11H5V6M15,6H19V8H15V6M19,9V14H15V9H19M5,12H9V14H5V12M10,12H14V14H10V12Z" /></svg>
                 <h1 class="sidebar-title">Dashboard</h1> 
@@ -50,5 +50,35 @@
                 </ul>
             </footer>
          </nav>
+         <!-- Top Layout  -->
+         <section id="content">
+            <header class="top-layout">
+                <div class="top-side">
+                    <button type="submit" class="button-non-visible search">
+                        <svg class="svg-search" xmlns="http://www.w3.org/2000/svg" height="10px" viewBox="0 -960 960 960" width="10px" fill="#5f6368"><path d="M765-144 526-383q-30 22-65.79 34.5-35.79 12.5-76.18 12.5Q284-336 214-406t-70-170q0-100 70-170t170-70q100 0 170 70t70 170.03q0 40.39-12.5 76.18Q599-464 577-434l239 239-51 51ZM384-408q70 0 119-49t49-119q0-70-49-119t-119-49q-70 0-119 49t-49 119q0 70 49 119t119 49Z"/></svg>
+                    </button>
+                    <input type="text" class="search-bar">
+                    <button type="" class="button-non-visible bell">
+                        <svg class="svg-bell" xmlns="http://www.w3.org/2000/svg" height="10px" viewBox="0 -960 960 960" width="10px" fill="#5f6368"><path d="M96-528q0-88.39 35.5-162.19Q167-764 230-818l51 50q-52 43-82.5 105.5T168-528H96Zm696 0q0-73-30.5-135.5T678-769l52-51q62 53 98 128.5T864-528h-72ZM192-216v-72h48v-240q0-87 53.5-153T432-763v-53q0-20 14-34t34-14q20 0 34 14t14 34v53q85 16 138.5 82T720-528v240h48v72H192Zm288-276Zm-.21 396Q450-96 429-117.15T408-168h144q0 30-21.21 51t-51 21ZM312-288h336v-240q0-70-49-119t-119-49q-70 0-119 49t-49 119v240Z"/></svg>
+                    </button>
+                    <img src="Images/Me.png" alt="Profile picture" class="user-img">
+                    <p class="user">Sebastian Rodriguez</p>
+                </div>
+                <div class="down-side">
+                    <div id="container-profile-pic">
+                        <img src="Images/Me.png" alt="Profile picture" class="profile-pic">
+                    </div>
+                    <div id="container-user">
+                        <p class="user-text-top">Hello there,</p>
+                        <h2 class="user-text-down">Sebastian Rodriguez (@SebastianBrenes)</h2>
+                    </div>
+                    <div id="container-user-options">
+                        <button class="button-user-options">New</button>
+                        <button class="button-user-options">Upload</button>
+                        <button class="button-user-options">Share</button>
+                    </div>
+                </div>
+            </header>
+         </section>
     </body>        
 </html>

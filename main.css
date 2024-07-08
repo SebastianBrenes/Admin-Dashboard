@@ -10,13 +10,19 @@
 
 
 :root {
-    --width-sidebar: 18%;
+    --width-sidebar: 40vw;
+    --user-profile-pic-width: 10vw;
+    --button-user-options-width: 30vw;
+    --username-width: 43vw;
+
 }
 
 body {
     font-family: "Rubik", sans-serif;
     margin: 0;
     padding: 0;
+    display: flex;
+
 }
 
 nav {
@@ -55,6 +61,8 @@ svg {
     position: relative;
     top: 10px;
     right: 5px;
+    height: 30px;
+    width: 30px;
 }
 
 #svg-sidebar {
@@ -78,7 +86,135 @@ li {
     gap: 10px;
 }
 
-svg {
+.top-layout svg {
+    position: relative;
+    top: 0px;
+    right: 0px;
+    height: 25px;
+    width: 25px;
+}
+
+
+.section-content-header {
+    display: inline;
+}
+
+
+.top-layout {
+    display: flex;
+    flex-direction: column;
+    box-shadow: 1px 1px 10px;
+    gap: 5px;
+}
+
+.top-side {
+    display: grid;
+    grid-template-columns: repeat(15, 1fr);
+    align-items: center;
+}
+
+.down-side {
+    display: flex;
+}
+
+
+.svg-search {
+    grid-column: 1 / 2;
+}
+
+.search-bar {
+    grid-column: 2 / 10;
+    border: 1px solid #c2c2c2;
+    border-radius: 14px;
+    height: 25px;
+    transition: height 0.2s
+}
+
+.search-bar:focus {
+    height: 35px;
+    outline-width: 0;
+}
+
+.svg-bell {
+    grid-column: 12 / 13;
+}
+
+.user-img {
+    width: 50px;
+    border-radius: 100%;
+    grid-column: 13 / 14;
+}
+
+.user {
+    grid-column: 14 / 16;
+    
+}
+
+.button-non-visible {
     height: 30px;
     width: 30px;
+    border: 0;
+    background-color: rgba(0, 0, 0, 0);
+    border-radius: 100%;
+    padding: 0px;
+    justify-self: center;
+    transition: background-color 0.4s;
+}
+
+.button-non-visible:hover {
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+#container-profile-pic {
+    width: var(--user-profile-pic-width);
+    text-align: center;
+}
+
+#container-user {
+    width: var(--username-width);
+}
+
+#container-user-options {
+    width: var(--button-user-options-width);
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    justify-items: center;
+}
+
+.profile-pic {
+    margin-top: 5px;
+    width: 70px;
+    border-radius: 100%;
+}
+
+.user-text-top {
+    margin: 0;
+    margin-top: 1rem;
+    font-size: 14px; 
+}
+
+.user-text-down {
+    margin: 0;
+    font-size: 25px;
+    font-style: italic;
+}
+
+.button-user-options {
+    font-family: 'Rubik', sans-serif;
+    font-weight: 100;
+    font-size: 12px;
+    border: 0;
+    border-radius: 18px;
+    height: 30px;
+    width: 90px;
+    background-color: #252977;
+    color: #fff;
+    transition: background-color 0.9s;
+}
+
+.button-user-options:hover {
+    cursor: pointer;
+    background-color: #253999;
 }
