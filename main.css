@@ -99,6 +99,7 @@ li {
     display: inline;
 }
 
+/* Content, top side */
 
 .top-layout {
     display: flex;
@@ -217,4 +218,28 @@ li {
 .button-user-options:hover {
     cursor: pointer;
     background-color: #253999;
+}
+
+/* Content, Your projects side */
+
+#main-content-section {
+    margin: 0;
+    display: flex;
+}
+
+#main-content {
+
+}
+
+#aside-content {
+
+}
+
+#main-content-grid {
+    display: grid;
+    grid-template-columns: minmax(150px, 400px) minmax(150px, 400px);
+}
+
+#aside-content-grid {
+    display: grid;
 }
