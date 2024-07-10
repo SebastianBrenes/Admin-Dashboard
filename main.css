@@ -14,7 +14,6 @@
     --user-profile-pic-width: 10vw;
     --button-user-options-width: 30vw;
     --username-width: 43vw;
-
 }
 
 body {
@@ -22,7 +21,7 @@ body {
     margin: 0;
     padding: 0;
     display: flex;
-
+    background-color: #dad8d8;
 }
 
 nav {
@@ -106,6 +105,8 @@ li {
     flex-direction: column;
     box-shadow: 1px 1px 10px;
     gap: 5px;
+    background-color: #fff;
+
 }
 
 .top-side {
@@ -225,7 +226,7 @@ li {
 #main-content-section {
     margin: 0;
     display: flex;
-}
+    }
 
 #main-content {
 
@@ -237,9 +238,60 @@ li {
 
 #main-content-grid {
     display: grid;
-    grid-template-columns: minmax(150px, 400px) minmax(150px, 400px);
+    grid-template-columns: minmax(150px, 390px) minmax(150px, 390px);
+    margin-left: 15px;
+    margin-right: 15px;
+    gap: 20px;
+    height: 450px;
+}
+
+.grid-item {
+    margin: 0;
+    border: 0px #181d72 solid ;
+    border-left: 6px #181d72 solid;
+    border-bottom: 6px #181d72 solid;
+    border-radius: 14px;
+    padding: 10px;
+    transition: border 0.2s;
+    background-color: #fff;
+
+}
+
+.grid-item:hover {
+    border: 6px #181d72 solid;
+}
+
+.grid-item h4 {
+    font-weight: 900    ;
+}
+
+.grid-item p {
+    font-size: 13px;
+    font-weight: 100;
+    color: #474747;
 }
 
 #aside-content-grid {
     display: grid;
+    background-color: #25297759;
+    border-radius: 14px;
+    width: 270px;
 }
+
+#aside-content h4{
+    margin-bottom: 5px;
+    margin-top: 30px;
+    font-size: 15px;
+}
+
+#aside-content-grid h5 {
+    border-bottom: 1px #000000a9 solid;
+    margin: 0px 15px 0px 15px;
+    padding: 1.5rem;
+    font-weight: 400;
+}
+
+#aside-content-grid h5:last-child {
+    border: 0;
+}
+
