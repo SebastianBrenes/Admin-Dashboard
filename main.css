@@ -26,7 +26,7 @@ body {
 
 nav {
     display: grid;
-    height: 100vh;
+    height: 104vh;
     width: var(--width-sidebar);
     gap: 20px;
     background-color: #252977;
@@ -228,14 +228,6 @@ li {
     display: flex;
     }
 
-#main-content {
-
-}
-
-#aside-content {
-
-}
-
 #main-content-grid {
     display: grid;
     grid-template-columns: minmax(150px, 390px) minmax(150px, 390px);
@@ -243,6 +235,10 @@ li {
     margin-right: 15px;
     gap: 20px;
     height: 450px;
+}
+
+#projects {
+    margin-left: 20px;
 }
 
 .grid-item {
@@ -269,6 +265,26 @@ li {
     font-size: 13px;
     font-weight: 100;
     color: #474747;
+}
+
+.grid-item .button-non-visible {
+    height: 30px;
+    width: 30px;
+    border: 0;
+    background-color: rgba(0, 0, 0, 0);
+    border-radius: 100%;
+    justify-self: center;
+    transition: background-color 0.4s;
+}
+
+
+.grid-item .button-non-visible:hover {
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.grid-item .button-non-visible svg {
+    position: static;
 }
 
 #aside-content-grid {
